@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run"
+    "test": "npx codeceptjs run --features --plugins allure",
+    "reports": "allure serve evidence"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^6.1.14",
-    "codeceptjs": "^2.6.6"
+    "codeceptjs": "^2.6.6",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "webdriverio": "^6.1.22"
