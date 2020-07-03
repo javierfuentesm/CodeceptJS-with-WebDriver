@@ -1,5 +1,10 @@
 exports.config = {
 	output: 'evidence',
+	multiple: {
+		basic: {
+			browsers: ['chrome', 'firefox'],
+		},
+	},
 	helpers: {
 		WebDriver: {
 			url: 'http://zero.webappsecurity.com/index.html',

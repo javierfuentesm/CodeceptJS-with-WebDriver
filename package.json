@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx codeceptjs run --features --plugins allure",
-    "reports": "allure serve evidence"
+    "test:multiple": "npx codeceptjs run-multiple basic --features --plugins allure",
+    "reports": "allure serve evidence/"
   },
   "author": "",
   "license": "ISC",
